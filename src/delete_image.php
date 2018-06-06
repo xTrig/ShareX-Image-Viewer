@@ -11,6 +11,9 @@ if(isset($_GET['img'])) { //Make sure there is an image specified to be deleted
            alert("Image deleted!"); //Alert the user that the file was deleted
             if(isset($_GET['page'])) { //Check if we need to redirect the user back to a specific page
                 $page = $_GET['page']; //Get the page the user was on
+				if(empty($page)) {
+					$page = 1;
+				}
                 header("location:welcome.php?page=".$page); //Send them back to that page
             } else {
                 header("location:welcome.php"); //They didn't request a page to be sent back to, send them back to the main screen
