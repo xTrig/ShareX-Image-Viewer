@@ -38,7 +38,7 @@
         foreach($images as $filename){
             $imageFile = basename($filename);
             
-            echo "<a href='./$imageFile'><img src='./$imageFile' class='img-thumbnail ctx' id='$imageFile'></a>"; //Img needs 'ctx' class for context menu to appear. The rest is bootstrap styling
+            echo "<a href='./view_image.php?img=$imageFile'><img src='./$imageFile' class='img-thumbnail ctx' id='$imageFile'></a>"; //Img needs 'ctx' class for context menu to appear. The rest is bootstrap styling
 
         }
     }
