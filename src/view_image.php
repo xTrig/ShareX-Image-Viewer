@@ -67,7 +67,7 @@ if(isset($_GET['img'])) {
      <?php include('header.php') ?> <!--Code to add a header to our webpage. Replace with any PHP code to include a header logo -->
      <h1><?php echo $imageTitle; ?></h1>
        <div id="imageContainer" style="padding-bottom: 10px;">
-           <img src="./<?php echo $imageName ?>" class='img-thumbnail'>
+           <?php echo "<a href='./$imageName'><img src='./$imageName' class='img-thumbnail'></a>"; ?>
        </div>
        <div id="imageDescription">
             <h2><?php echo $description; ?></h2>
