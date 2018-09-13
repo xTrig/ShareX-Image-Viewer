@@ -11,7 +11,7 @@
     }
 
     function insertImageSelection($startNo, $amount) { //Function to display pages on the website. Called from the HTML code below.
-        $ignore = array("logo.png", "delete.png", "save.png", "view.png", "edit.png"); //Blacklisted files
+        $ignore = array("logo.png", "delete.png", "save.png", "view.png", "edit.png", "favicon.ico"); //Blacklisted files
         
         
         $images = getImages($startNo, $amount); //Get the images we want to view. $startNo is calculated from ($page * $RESULTS_PER_PAGE), and amount is $RESULTS_PER_PAGE by default.
