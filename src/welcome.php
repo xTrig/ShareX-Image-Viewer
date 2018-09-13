@@ -11,7 +11,7 @@
     }
 
     function insertImageSelection($startNo, $amount) { //Function to display pages on the website. Called from the HTML code below.
-        $ignore = array("logo.png", "delete.png", "save.png"); //Blacklisted files
+        $ignore = array("logo.png", "delete.png", "save.png", "view.png", "edit.png"); //Blacklisted files
         
         
         $images = getImages($startNo, $amount); //Get the images we want to view. $startNo is calculated from ($page * $RESULTS_PER_PAGE), and amount is $RESULTS_PER_PAGE by default.
@@ -89,8 +89,8 @@
        </div>
 
        <!--Page controls-->
-       <button id="prevBtn">Previous</button>
-       <button id="nextBtn">Next</button>
+       <button id="prevBtn" class="btn btn-secondary">Previous</button>
+       <button id="nextBtn" class="btn btn-secondary">Next</button>
        <!--End of page controls-->
      <?php include('footer.php'); ?>
    </div>

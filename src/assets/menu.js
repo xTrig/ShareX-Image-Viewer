@@ -3,9 +3,17 @@ $(document).ready(function() {
         {
             name: 'view',
             title: 'View this image',
-            img: 'assets/save.png',
+            img: 'assets/view.png',
             fun: function(data, event) {
                 $(location).attr('href', './view_image.php?img=' + data.trigger[0].id);
+            }
+        },
+        {
+            name: 'edit',
+            title: 'Edit this image',
+            img: 'assets/edit.png',
+            fun: function(data, event) {
+                $(location).attr('href', './edit_image.php?img=' + data.trigger[0].id);
             }
         },
         {
